@@ -1,0 +1,32 @@
+html, body {
+	height: 100%;
+	scroll-behavior: initial;
+}
+
+h1 {
+	padding-left: 1%;
+	padding-right: 2%;
+	margin: 0px;
+}
+
+nav {
+	border-style: outset;
+	border-width: thick;
+	padding: 0px;
+	margin: 0px;
+}
+
+div.row {
+	height: 100%;
+}
+
+div.sidebar {
+	border-style: inset;
+	border-width: thick;
+}
+
+.collapsing {
+	-webkit-transition: none;
+    transition: none;
+    display: none;
+}
