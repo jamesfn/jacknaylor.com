@@ -1,5 +1,8 @@
 html, body {
 	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
 	scroll-behavior: initial;
 }
 
@@ -12,8 +15,9 @@ h1 {
 nav {
 	border-style: outset;
 	border-width: thick;
-	padding: 0px;
+	padding: 3px;
 	margin: 0px;
+	justify-content: left;
 }
 
 div.row {
@@ -23,10 +27,16 @@ div.row {
 div.sidebar {
 	border-style: inset;
 	border-width: thick;
+	text-align: center;
+	font-size: 2vw;
 }
 
 .collapsing {
 	-webkit-transition: none;
     transition: none;
     display: none;
+}
+
+a.nav_link {
+	padding: 0px;
 }

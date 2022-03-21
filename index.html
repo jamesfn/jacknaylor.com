@@ -10,30 +10,22 @@
 		<link rel='stylesheet' href="styles.css">
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-xl ">
+		<nav class="navbar navbar-expand-xl">
 			<h1>Jack Naylor</h1>
-			<a class="btn btn-primary" data-bs-toggle="collapse" href="#sidebar" role="button">
-					Link with href
-			</a>
+			<div>
+				<a class="btn btn-outline-secondary" data-bs-toggle="collapse" href="#sidebar" role="button">&#9776; Projects</a>
+				<a href="https://github.com/jamesfn" class="btn btn-outline-secondary" role="button">Github</a>
+			</div>
 		</nav>
 		<div class="row">
-			<div class="sidebar col-3 collapse" id="sidebar">
-				<ul class="nav flex-column">
-					<li class="nav-item">
-						<a class="nav-link active" href="#">Active</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Link</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Link</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link disabled" href="#">Disabled</a>
-					</li>
-				</ul>
+			<div class="sidebar col-2 collapse" id="sidebar">
+				<p>Projects</p>
+				<a class="nav-link px-0" href="#">Active</a>
+				<a class="nav-link px-0" href="#">Link</a>
+				<a class="nav-link px-0" href="#">Link</a>
+				<a class="nav-link px-0" href="#">Disabled</a>
 			</div>
-			<div class="col-9">
+			<div class="col-10">
 			</div>
 		</div>
 		<!--bootstrap js-->
