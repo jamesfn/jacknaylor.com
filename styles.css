@@ -102,3 +102,9 @@ a.nav_link {
 .col-9 {
 	background-image: linear-gradient(270deg, #43e, rgba(51, 54, 255, 0.507) 5%, rgba(51, 54, 255, 0.507) 95%, #43e);
 }
+
+@media only screen and (max-width: 535px) {
+	.btn-dark {
+		font-size: .9em;
+	}
+}
