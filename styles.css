@@ -6,13 +6,25 @@ html, body {
 	scroll-behavior: initial;
 }
 
+a.projLink {
+	font-size: 2vw;
+}
+
+a.home:hover, a.home:visited, a.home:link, a.home:active
+{
+    text-decoration: none;
+	color: black;
+}
+
 .row {
 	background-color: rgba(51, 54, 255, 0.507);
 	font-family:'Trebuchet MS', sans-serif;
+	margin: auto;
 }
 
 .col-3 {
-	background-color: rgba(184, 184, 184, 0.795);
+	/*background-image: linear-gradient(90deg, white, rgba(184, 184, 184, 0.795) 15%, rgba(184, 184, 184, 0.795) 85%, white);*/
+	background-image: linear-gradient(white, rgb(107, 107, 107) 50%);
 }
 
 h1 {
@@ -20,12 +32,13 @@ h1 {
 	margin: 1%;
 	margin-left: 2%;
 	font-family: fantasy;
-	border-style: outset;
-	border-width: thick;
-	border-color: chartreuse;
-	background-color: white;
+	border-style: solid;
+	/*background-image: linear-gradient(#43e, white 10%, white 90%, #43e);
+	background-image: conic-gradient(rgb(107, 107, 107), rgb(107, 107, 107), white, white, #43e, chartreuse, #43e, white, white, rgb(107, 107, 107), rgb(107, 107, 107));*/
 	font-size: 3em;
+	text-decoration: none;
 }
+
 
 h3 {
 	font-size: 3vw;
@@ -35,9 +48,15 @@ nav {
 	border-style: outset;
 	border-width: thick;
 	border-color: chartreuse;
-	background-color: rgba(98, 0, 226, 0.479);
+	/*background-color: rgba(98, 0, 226, 0.479);*/background-image: radial-gradient(farthest-corner at 0%,
+	white 0%, #43e 100%);
 	padding: 3px;
 	margin: 0px;
+}
+
+div.contentWrapper {
+	margin-top: 2%;
+	padding-bottom: 2%;
 }
 
 div.row {
@@ -57,6 +76,15 @@ div.sidebar {
 	font-size: 2vw;
 }
 
+h3.contentHeader {
+	padding: 2%;
+}
+
+p.content {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
 .btn {
 	font-family: fantasy;
 }
@@ -71,9 +99,6 @@ a.nav_link {
 	padding: 0px;
 }
 
-@media only screen and (max-width: 465px) {
-	nav {
-		display: flex;
-		justify-content: center;
-	} 
+.col-9 {
+	background-image: linear-gradient(270deg, #43e, rgba(51, 54, 255, 0.507) 5%, rgba(51, 54, 255, 0.507) 95%, #43e);
 }
