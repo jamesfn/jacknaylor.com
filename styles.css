@@ -4,6 +4,7 @@ html, body {
 	margin: 0px;
 	padding: 0px;
 	scroll-behavior: initial;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 a.projLink {
@@ -29,13 +30,12 @@ a.home:hover, a.home:visited, a.home:link, a.home:active
 
 h1 {
 	padding: 2%;
-	margin: 1%;
-	margin-left: 2%;
-	font-family: fantasy;
+	margin: 0%;
+	margin-left: 0%;
+	/*font-family: fantasy;*/
 	border-style: solid;
-	/*background-image: linear-gradient(#43e, white 10%, white 90%, #43e);
-	background-image: conic-gradient(rgb(107, 107, 107), rgb(107, 107, 107), white, white, #43e, chartreuse, #43e, white, white, rgb(107, 107, 107), rgb(107, 107, 107));*/
-	font-size: 3em;
+	background-image: repeating-radial-gradient(circle at 0 0, chartreuse 49px, #43e 50px);
+	font-size: 2.7em;
 	text-decoration: none;
 }
 
@@ -50,13 +50,14 @@ nav {
 	border-color: chartreuse;
 	/*background-color: rgba(98, 0, 226, 0.479);*/background-image: radial-gradient(farthest-corner at 0%,
 	white 0%, #43e 100%);
-	padding: 3px;
+	padding: 0px;
 	margin: 0px;
 }
 
 div.contentWrapper {
 	margin-top: 2%;
 	padding-bottom: 2%;
+	background-image: linear-gradient(270deg, rgb(185, 185, 185), white 4%, white 96%, rgb(185, 185, 185));
 }
 
 div.row {
@@ -76,8 +77,27 @@ div.sidebar {
 	font-size: 2vw;
 }
 
-h3.contentHeader {
+h3.contentHeader, h3.sideHeader {
 	padding: 2%;
+}
+
+h3.sideHeader {
+	font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+img.lightOne, img.lightTwo {
+	width: auto;
+	max-width: 200px;
+}
+
+img.lightOne {
+	transform: rotate(-20deg);
+	padding-left: .7%;
+}
+
+img.lightTwo {
+	transform: scaley(-1) rotate(160deg);
+	margin-right: .7%;
 }
 
 p.content {
@@ -85,9 +105,9 @@ p.content {
 	padding-right: 10%;
 }
 
-.btn {
-	font-family: fantasy;
-}
+/*.btn, h1, h3.contentHeader {
+	font-family: 'Ubuntu', sans-serif;
+}*/
 
 .collapsing {
 	-webkit-transition: none;
@@ -103,8 +123,25 @@ a.nav_link {
 	background-image: linear-gradient(270deg, #43e, rgba(51, 54, 255, 0.507) 5%, rgba(51, 54, 255, 0.507) 95%, #43e);
 }
 
+.space {
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
 @media only screen and (max-width: 535px) {
 	.btn-dark {
 		font-size: .9em;
+	}
+}
+
+@media only screen and (max-width: 840px) {
+	.space {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.space {
+		margin-left: 25%;
 	}
 }
